@@ -1,4 +1,13 @@
-<form>
-  <textarea #itemTextxEl placeholder="Enter To-Do" rows="3"></textarea>
-  <button>Add</button>
+<form class="mb-4" (submit)="addNewItem(itemTextxEl.value, $event)">
+  <textarea
+    #itemTextxEl
+    placeholder="Enter To-Do"
+    rows="3"
+    class="w-full hover:bg-purple-500"
+  ></textarea>
+  <button
+    class="w-full py-2 px-3 rounded-md bg-purple-700 text-white hover:bg-purple-600"
+  >
+    Add
+  </button>
 </form>

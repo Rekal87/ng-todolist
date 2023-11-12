@@ -1,4 +1,7 @@
-<article>
-  <h3></h3>
-  <input type="checkbox" />
+<article
+  [ngClass]="{ 'to-do-item--done': item.done }"
+  class="to-do-item w-full cursor-pointer border flex flex-row px-3 py-3"
+>
+  <h3>{{ item.text }}</h3>
+  <input [checked]="item.done" type="checkbox" />
 </article>
