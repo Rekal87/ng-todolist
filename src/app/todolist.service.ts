@@ -1,4 +1,4 @@
-import { Injectable, effect, signal, SettableSignal } from '@angular/core';
+import { Injectable, effect, signal } from '@angular/core';
 import { DUMMY_TODOLIST_ARR } from './dummy-data';
 import { TodoListItem } from './component/todolistitem';
 
