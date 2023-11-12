@@ -1,0 +1,16 @@
+<h2 class="text-2xl mb-4">Angular Todo list</h2>
+<section class="add-new-todo-list">
+  <app-to-do-form />
+</section>
+<section class="mb-4 finished-count flex items-center justify-end">
+  <p>
+    <!-- count, listarray -->
+    {{ finishedCount() }} / {{ todolistArray().length }}
+  </p>
+</section>
+<section class="todo-items min-w-[250] flex flex-col gap-3">
+  <app-to-do-item
+    [item]="tdItem"
+    *ngFor="let tdItem of todolistArray()"
+  ></app-to-do-item>
+</section>
